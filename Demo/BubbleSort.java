@@ -9,7 +9,11 @@ public class BubbleSort {
 			// 每轮比较的次数
 			for (int j = arr.length - 1; j > i; j--) {
 				// 用最后一个数据跟前一个位置的数据进行比较，直到比较到i的位置
-				if (arr[j] > arr[j - 1]) {
+				if (arr[j] < arr[j - 1]) {
+					/*
+					 * =======		"<"代表降序
+					 * =======      ">"代表升序
+					 * */
 					temp = arr[j];
 					arr[j] = arr[j - 1];
 					arr[j - 1] = temp;
