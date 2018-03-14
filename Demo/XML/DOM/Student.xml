@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 定义一个根节点 -->
+<students author="郭桐良" time="2018-3-13">
+	<!-- 第一个学生 -->
+	<stu id="1">
+		<name value="张三">张三</name>
+		<age value="20">20</age>
+		<sex value="男">男</sex>
+	</stu>
+	<!-- 第二个学生 -->
+	<stu id="2">
+		<name>李四</name>
+		<age>24</age>
+		<sex>女</sex>
+	</stu>
+</students>
