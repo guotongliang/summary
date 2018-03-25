@@ -1,0 +1,3 @@
+1.MD5加密在LoginBizImpl中
+2.事务在BaseDao中的增删改方法的位置
+3.log4j日志功能在LoginBizImpl中
