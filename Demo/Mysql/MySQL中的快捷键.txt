@@ -1,0 +1,17 @@
+1.Shift+Alt+i：自动生成添加语句
+    INSERT INTO `dbname`.`dept`
+            (`dept_id`,
+             `dept_name`)
+    VALUES ('dept_id',
+        'dept_name');
+
+2.Shift+Alt+u：自动生成修改语句
+    DELETE
+    FROM `dbname`.`dept`
+    WHERE `dept_id` = 'dept_id';
+
+3.Shift+Alt+d：自动生成删除语句
+    UPDATE `dbname`.`dept`
+    SET `dept_id` = 'dept_id',
+        `dept_name` = 'dept_name'
+    WHERE `dept_id` = 'dept_id';

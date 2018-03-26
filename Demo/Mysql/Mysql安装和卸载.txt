@@ -1,0 +1,60 @@
+1.MySQL的安装
+    --mysql-5.5.28-winx64.msi
+    --next
+    --在I accept前边打钩  next
+    --custom  next
+    --location：的路径自己去改  next
+    --Install安装
+    --next
+    --finish
+    --next(5个)之后停止，也就是出现下边这段话
+    --Please set the approximate number of concurent connecions to server.
+    --在Manual Setting前边打钩，并且右下方有个Concurrent connecions的选择，可以选择人数
+    --之后next
+    --3306端口号这块不用改next
+    
+    --Please select the default character set.(也就是字符编码)
+    --选择最下边这个并且选择utf8之后next
+    --有两个需要打钩的地方，都要勾上，配置环境变量(打钩后就是自动配置)next
+    --这个页面是需要设置密码的(两遍),用户名是固定的root，建议密码也是root，
+    ****密码框下边是Enable root access from remote machines.也就是别人可以远程连接你的数据库，建议勾上next
+    --Execute直接装，等到上边的四个都变成勾上的情况就装上了。
+    --finish
+    --到此，安装结束！！！
+
+
+
+2.MySQL的卸载
+    --计算机
+    --管理
+    --服务和应用程序
+    --服务(Windows+r-----services.msc打开服务)
+    --Mysql
+    --右击停止
+    
+    --控制面板
+    --卸载MySQL
+    
+    --之后找到MySQL的安装路径
+    --删除整个文件夹
+    
+    --再找C盘
+    --ProgramData(有可能是隐藏的--组织--文件夹和搜索选项--查看--设置隐藏的文件)
+    --Mysql整个文件夹删掉
+    
+    --还要删除注册表中的信息
+    --windows+r
+    --regedit
+    --HKEY_LOCAL_MACHINE
+    --SYSTEM
+    --ControlSet001和ControlSet002中一样步骤的内容
+    
+    --ControlSet001/ControlSet002
+    --services
+    --eventlog
+    --Application
+    --Mysql的文件右击删除
+    *****************
+    注意：两个set中都要删除
+    ============
+    到此，卸载结束！！！
